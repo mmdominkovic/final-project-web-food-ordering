@@ -1,0 +1,456 @@
+
+body {
+  
+    font-family: "Lato", sans-serif;
+    transition: background-color .4s;
+    background: no-repeat fixed;
+    background-image: url("images/bg_4.jpg");
+  }
+
+
+
+  .logo-home{
+    width: 400px;
+    height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -10000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-attachment: scroll;
+    background-position: center;
+   
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: white;
+  
+  }
+  .right_navbar {
+    margin-right: 100px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;} }
+
+   
+   
+ .subheading {
+     font-family: "Nothing You Could Do", cursive;
+     font-size: 30px;
+     color: #fac564;
+    text-align: right; }
+.pic_container {
+      position:relative;
+      width: 50%;
+    }
+    
+    .img-fluid {
+      display: block;
+      opacity: 1;
+     
+      width: 30%;
+      transition: .5s ease;
+      backface-visibility: hidden;
+                } 
+
+.pic_container:hover .img-fluid {
+  opacity: 0.3;
+            }
+.pic_container:hover .middletext {
+              opacity: 1;
+}
+.middletext {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.button-container {
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  height: 15vh;
+  width: 100%;
+  perspective: 1000px;
+}
+.button-container .button-flipper {
+  transition: 0.8s cubic-bezier(0.775, 0.07, 0.575, 0.995);
+  transform-style: preserve-3d;
+  position: absolute;
+}
+.button-container .button-flipper:hover {
+  transform: rotateX(180deg);
+}
+.button-container .front-button {
+  cursor: pointer;
+  width: 260px;
+  height: 60px;
+  background-color: #FF8C00;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateX(0deg);
+  position: absolute;
+  box-shadow: 0px 8px 12px #ccc;
+}
+.button-container .back-button {
+  cursor: pointer;
+  width: 260px;
+  height: 60px;
+  background-color: #26C281;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  backface-visibility: hidden;
+  transform: rotateX(-180deg);
+  position: relative;
+  box-shadow: 0px 8px 12px #ccc;
+}
+.modal {
+  font-size:1vw;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(248, 201, 201, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+ 
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.d-md-flex {
+display: flex;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+/*/.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgb(149, 125, 125) !important;
+}
+
+.card-header h3{
+color: white;
+}
+/*/
+
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+.img {
+  position: relative;
+  float: left;
+  width:  250px;
+  height: 250px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+.text {
+  position: relative;
+  float: left;
+  width:  250px;
+  height: 250px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color:black;
+}
+
+.mb-4 {
+  color:white;
+  text-align: center;
+ 
+}
+.welcome-mess{
+ color:white;
+
+ text-align: center;
+}
+.content {
+ height: 600px;
+ 
+  
+}
+.breadcrumbs-title {
+  font-size: 60px;
+  text-align: center;
+  color: white;  
+}
+
+.caption {
+  font-size: 40px;
+  text-align: center;
+  color: white;  
+}
+.header {
+  color:white;
+}
+
+.responsive-table {
+  color:white;
+  width: 100%;
+    display: table;
+    border:none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: inherit;
+}  
+
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+  @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+	
+  }
+  .divider{
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+}
+
+h4.header {
+  line-height: 2.508rem;
+  margin: 1.14rem 0 0.912rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+.card-panel {
+  transition: box-shadow .25s;
+  padding: 20px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  line-height: 1.5;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+}
+.row {
+  margin-bottom: 0;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  box-sizing: inherit;
+  display: block;
+  line-height: 1.5;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+}
+ .formValidate .formValidate1{
+
+  box-sizing: inherit;
+  display: block;
+  margin-top: 0em;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+ }
+ .footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  margin-bottom: 0px;
+ }
+ body
+{
+  background-color:#f5f5f5;
+}
+.imagePreview {
+    width: 100%;
+    height: 180px;
+    background-position: center center;
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color:#fff;
+    background-size: cover;
+  background-repeat:no-repeat;
+    display: inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.btn-primary
+{
+  display:block;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+}
+.imgUp
+{
+  margin-bottom:15px;
+}
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+.imgAdd
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}
